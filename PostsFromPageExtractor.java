@@ -22,11 +22,11 @@ public static void main(String[] args) throws FacebookException {
     // Generate facebook instance.
     Facebook facebook = new FacebookFactory().getInstance();
     // Use default values for oauth app id.
-    facebook.setOAuthAppId("658352027924863", "6cb6d84b391776da2c959a1e564e1fd2");
+    facebook.setOAuthAppId("xxxxxxx", "xxxxxx");
     // Get an access token from: 
     // https://developers.facebook.com/tools/explorer
     // Copy and paste it below.
-    String accessTokenString = "EAAJWxIbCZBX8BAH4ZBn0VjFZBg1ASPIU1VOWsuSAydqBr2rrZC8AnPWpcFcYQDBq1vaE4UvRnZC42i39EYAyZADTeIpW6YVUMSQqoLtrWvvo9kWBMIXqk3nDQOthYplX8bsBHAXwDOHqWNLSvRZCBIyxP9YOAFlhu2mgBEwCxiJ9np4QqSdxIM63rsqsC0KFOoebjOWUPKV9pceEPJH57ZCsboNo5ak51VoFkiAAJFIAKwZDZD";
+    String accessTokenString = "xxxx";
     AccessToken at = new AccessToken(accessTokenString);
     // Set access token.
     facebook.setOAuthAccessToken(at);
@@ -37,7 +37,7 @@ public static void main(String[] args) throws FacebookException {
     // https://developers.facebook.com/tools/explorer
 
     // Set limit to 25 feeds.
-    ResponseList<Post> feeds = facebook.getFeed("1290479481099119",
+    ResponseList<Post> feeds = facebook.getFeed("xxx",
             new Reading().limit(25));
 
         // For all 25 feeds...
